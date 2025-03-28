@@ -71,3 +71,60 @@
 // }
 
 
+// Largest Number From An Array............................................................
+
+// let arr=[2,1,4,3,5,6,8,9,10]
+// for(let i=0;i<arr.length-1;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]<arr[j]){
+//             [arr[j],arr[i]]=[arr[i],arr[j]]
+//         }
+//     }
+// }
+// console.log(arr[0])
+
+
+//Sum of Object Values...............................................................
+
+// let obj = {
+//     a: 10,
+//     b: "Hello",
+//     c: 20,
+//     d: "Navya",
+//     e: 30,
+//     f: 40,
+//     g: "CS"
+// };
+// let sum=0
+// let Values=Object.values(obj)
+// for(let i=0;i<Values.length;i++){
+//     if(typeof(Values[i])=="number"){
+//         sum+=Values[i]
+//     }
+// }
+// console.log(sum)
+
+
+//Count of Vowels..............................................................
+
+// let word="Hello"
+// let Vowels="aeiouAEIOU"
+// let count=0
+// for(let i=0;i<word.length;i++){
+//     for(let j=0;j<Vowels.length;j++){
+//         if(word[i]==Vowels[j]){
+//             count++
+//         }
+//     }
+// }
+
+// console.log(count)
+
+//String Reverse.....................................................................
+
+// let str="Hello world"
+// let newStr=""
+// for(let i=str.length-1;i>0;i--){
+//     newStr+=str[i]
+// }
+// console.log(newStr)
