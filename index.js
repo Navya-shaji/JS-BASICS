@@ -1,4 +1,4 @@
-// Create a new array containing all the numbers between the minimum and maximum values.
+// Create a new array containing all the numbers between the minimum and maximum values..................................................
 
 // let a=[1,8,7,9,10]
 // let size=0;
@@ -20,7 +20,7 @@
 
 
 
-//Largest Even Number...............................................
+//Largest Even Number.............................................................................................................
 
 // let arr=[1,5,7,3,8,67,34]
 // let Largesteven=arr[0]
@@ -32,7 +32,7 @@
 // console.log(Largesteven)
 
 
-//Repeated Number Count..........................................
+//Repeated Number Count...........................................................................................................
 
 // let arr=[1,2,1,3,4,3,5,5,6];
 // let count=0;
@@ -48,7 +48,7 @@
 // console.log(count)
 
 
-//Frequency Number Count..........................................
+//Frequency Number Count............................................................................................................
 
 // let arr=[1,4,2,3,5,7,1,1,2,2,8,9,10]
 // let freq={}
@@ -71,7 +71,7 @@
 // }
 
 
-// Largest Number From An Array............................................................
+// Largest Number From An Array......................................................................................................
 
 // let arr=[2,1,4,3,5,6,8,9,10]
 // for(let i=0;i<arr.length-1;i++){
@@ -84,7 +84,7 @@
 // console.log(arr[0])
 
 
-//Sum of Object Values...............................................................
+//Sum of Object Values................................................................................................................
 
 // let obj = {
 //     a: 10,
@@ -105,7 +105,7 @@
 // console.log(sum)
 
 
-//Count of Vowels..............................................................
+//Count of Vowels.................................................................................................................................
 
 // let word="Hello"
 // let Vowels="aeiouAEIOU"
@@ -120,7 +120,7 @@
 
 // console.log(count)
 
-//String Reverse.....................................................................
+//String Reverse..........................................................................................................................
 
 // let str="Hello world"
 // let newStr=""
@@ -128,3 +128,71 @@
 //     newStr+=str[i]
 // }
 // console.log(newStr)
+
+
+
+//Avg of prime numbers in an array........................................................................................................
+
+// let arr=[2,5,7,9,8,3,1]
+// sum=0
+// count=0
+// for(let i=0;i<arr.length;i++){
+//     flag=0
+//   for(let j=2;j<arr[i];j++){
+//       if(arr[i]%j==0 ){
+//           flag=1
+//       }
+//   }
+//   if(flag==0 && arr[i]!==1){
+//       count++
+//       sum+=arr[i]
+//       console.log(arr[i])
+//   }
+ 
+// }
+//  console.log(sum/count)
+
+
+
+//Delete the duplicate/unique in an array..........................................................................................
+
+// let arr=[1,2,4,5,3,7,1,2]
+// for(let i=0;i<arr.length;i++){
+//     flag=0
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//            flag=1
+//         }
+//     }
+//     if(flag==0){
+//         console.log(arr[i])
+//     }
+// }
+
+//Print the duplicate numbers in an array...............................................................................
+
+// let arr=[1,2,4,5,3,7,1,2]
+// for(let i=0;i<arr.length;i++){
+//     flag=0
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//            flag=1
+//         }
+//     }
+//     if(flag==1){
+//         console.log(arr[i])
+//     }
+// }
+
+// Return “hello” as “o”,”l”,”l”,”e”,”h”...........................................................................
+
+// let str="hello"
+// let result=""
+// for(let i=str.length-1;i>=0;i--){
+//     result+=`"${str[i]}"`
+//   if(i>0){
+//       result+=","
+//   }
+// }
+// console.log(result)
+
