@@ -196,3 +196,277 @@
 // }
 // console.log(result)
 
+
+
+// Replace zeros to front................................................................................
+
+
+// let arr=[0,2,5,0,3,4,0,1,0]
+// let index=arr.length-1;
+// for(let i=arr.length-1;i>0;i--){
+//     if(arr[i]!==0){
+//         [arr[i],arr[index]]=[arr[index],arr[i]]
+//         index--
+//     }
+// }
+// console.log(arr)
+
+
+
+//Find Duplicates........................................................................................................
+
+
+// let arr=[3,9,6,9,2,3,7]
+// let result=[]
+// let newArray=[]
+// for(let i=0;i<arr.length;i++){
+// let flag=0
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             flag=1
+//             result[result.length]=arr[j]
+//         }
+        
+//     }
+//     if(flag==0){
+//         newArray[newArray.length]=arr[i]
+//     }
+        
+// }
+// console.log(result)
+// console.log(newArray)
+
+
+
+//Find the kth largest................................................................................
+
+// let arr=[10,3,6,7,9,8]
+// let k=2
+// for(let i=0;i<arr.length;i++){
+//    for(let j=i+1;j<arr.length;j++){
+//        if(arr[i]<arr[j]){
+//            [arr[i],arr[j]]=[arr[j],arr[i]]
+//        }
+       
+//    }
+//           if(i+1==k){
+//               console.log(arr[i])
+//           }
+   
+// }
+
+// console.log(arr)
+
+
+
+//Find the prime numbers between the number.......................................................
+
+// let num=15
+// for(let i=2;i<num;i++){
+//    let  flag=0
+//     for(let j=2;j<i;j++ ){
+//     if(i%j==0 && i!==1){
+//         flag=1
+       
+//     }
+//     }
+//     if(flag==0){
+//         console.log(i)
+//     }
+// }
+
+
+//split into two arrays...............................................................................
+
+// let arr=[10,3,6,7,9,3,8]
+// let left=[]
+// let right=[]
+// let mid=arr.length/2
+
+// for(let i=0;i<arr.length;i++){
+//     if(i<mid){
+//         left[left.length]=arr[i]
+//     }else{
+//         right[right.length]=arr[i]
+//     }
+// }
+// console.log(left)
+// console.log(right)
+
+
+//Remove the multiples of 2.................................................................................................
+
+// let arr=[10,3,6,7,9,3,8]
+// let result=[]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]%2!==0){
+//         result[result.length]=arr[i]
+//     }
+// }
+// console.log(result)
+
+
+
+//remove the elements after multiple of 5.................................................................................
+
+// let arr=[10,3,6,7,90,6,8]
+// let r=[]
+// let s=[]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i-1]%5==0)
+//    continue;
+//        r[r.length]=arr[i]
+
+// }
+// console.log(r)
+
+
+//find the prime numbers from an array and find the sum of the prime numbers. if the sum is greater than 50 remove the even numbers from the array and if the sum is less than 50 remove the odd numbers
+
+
+// let arr = [1, 2, 3, 87, 95, 5, 6, 7, 9, 15, 84]
+// let prime=[]
+// let sum=0
+// let Result=[]
+// for(let i=0;i<arr.length;i++){
+//     let flag=0;
+//     if(i<2) continue;
+//     for(let j=2;j<arr[i];j++){
+//         if(arr[i]%j==0 && arr[i]!==1){
+//             flag=1;
+//         }
+//     }
+//     if(flag==0){
+//         prime[prime.length]=arr[i]
+//         sum+=arr[i]
+//     }
+    
+// }
+// for(let i=0;i<prime.length;i++){
+//         if(sum>50 && prime[i]%2==0){
+//             Result[Result.length]=prime[i]
+//         }else if(sum<50 && prime[i]%2==1){
+//             Result[Result.length]=prime[i]
+//         }
+        
+//     }
+// console.log(sum)
+// console.log(Result)
+
+
+//remove the even numbers from an array without using inbuilt methods
+
+// let arr = [1, 2, 3, 87, 95, 5, 6, 7, 9, 15, 84]
+// let result=[]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]%2==1){
+//         result[result.length]=arr[i]
+//     }
+// }
+// console.log(result)
+
+//multiple of 7 using do while loop & While loop........................................................
+
+// let i=1;
+// do{
+//     console.log(i*7)
+//     i++
+// }while(i<=10)
+
+
+// let i=1
+// while(i<=10){
+//     console.log(i*7)
+//     i++
+// }
+
+//Reverse the array within the array.................................................
+
+// let arr=[1,2,3,4,5,6]
+// for(let i=0;i<arr.length;i++){
+// for(let j=i+1;j<arr.length;j++){
+//     [arr[i],arr[j]]=[arr[j],arr[i]]
+// }
+    
+// }
+// console.log(arr)
+
+
+
+//Largest from 3 variable............................................................................................................
+
+// let a=1;
+// let b=12;
+// let c=122;
+// if(a>b && a>c){
+//     console.log("largest",a)
+// }else if(b>a && b>c){
+//     console.log("largest",b)
+// }else{
+//         console.log("largest",c)
+
+// }
+
+
+// finding duplicate without using another array(deleting duplicates also)
+
+// let arr=[1,2,3,2,4,4,6,7,8,6]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             for(let k=j;k<arr.length;k++){
+//                 arr[k]=arr[k+1]
+//             }
+//             arr.length--;
+//             j--;
+//         }
+//     }
+// }
+// console.log(arr)
+
+//Factorial using do-while loop................................................................................
+
+// let num=1;
+// let fact=1;
+// let i=1;
+// do{
+//     fact*=i
+//     i++
+// }while(i<=num)
+// console.log(fact)
+
+//Find sum of digits in a number..........................................................................................
+
+// let n=12;
+// let sum=0;
+// let str=n+""
+// for(let i=0;i<str.length;i++){
+//     sum+=str[i]-""
+// }
+// console.log(sum)
+
+
+//vowels count..................................................................
+
+
+// let a='aeiouAEIOU'
+// let vowels='aeiouAEIOU'
+// let count=0
+// for(let i=0;i<a.length;i++){
+//     for(j=0;j<vowels.length;j++){
+//         if(a[i]==vowels[j]){
+//             count++
+//         }
+//     }
+// }
+// console.log(count)
+
+//palindrome.............................................................................
+
+// let word="malayalam"
+// let result=""
+// for(let i=word.length-1;i>=0;i--){
+//     result+=word[i]
+// }
+// console.log(result)
+// console.log((result==word) ? "Palidrome":"Not palidrome")
