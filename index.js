@@ -1,26 +1,27 @@
 // Create a new array containing all the numbers between the minimum and maximum values..................................................
 
-// let a=[1,8,7,9,10]
-// let size=0;
-// let empty=[]
-// for(let i=0;i<a.length-1;i++){
-//     for(let j=i+1;j<a.length;j++){
-//         if(a[i]>a[j]){
-//             [a[i],a[j]]=[a[j],a[i]]
+// let arr=[3,1,2,4,5,6,8,9,10]
+// let a=[]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]<arr[j]){
+//             [arr[i],arr[j]]=[arr[j],arr[i]]
 //         }
 //     }
 // }
-// let Max=a[a.length-1]
-// let Min=a[0]
-// for(let k=Min;k<=Max;k++){
-//     empty[size]=k
-//     size++
+// let min=arr[arr.length-1]
+// let max=arr[0]
+// for(let k=0;k<arr.length;k++){
+//    if(arr[k]!==min && arr[k]!==max){
+//        a[a.length]=arr[k]
+//    }
 // }
-// console.log(empty)
+// console.log(a)
 
 
 
-//Largest Even Number.............................................................................................................
+
+ //Largest Even Number.............................................................................................................
 
 // let arr=[1,5,7,3,8,67,34]
 // let Largesteven=arr[0]
@@ -30,6 +31,45 @@
 //     }
 // }
 // console.log(Largesteven)
+
+// ..........................................................................OR.....................................................................
+
+// let arr=[3,1,2,4,5,6,8,9,10]
+// let a=[]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]>arr[j]){
+//             [arr[i],arr[j]]=[arr[j],arr[i]]
+//         }
+//     }
+//         if(arr[i]%2==0){
+//             a[a.length]=arr[i]
+//         }
+// }
+// max=a[a.length-1]
+// console.log(max)
+
+
+//odd number small..........................................................................................
+
+// let arr=[3,1,2,4,5,6,8,9,10]
+// let a=[]
+// for(let i=0;i<arr.length;i++){
+   
+//         if(arr[i]%2==1){
+//             a[a.length]=arr[i]
+//         }
+    
+// }
+// for(let i=0;i<a.length;i++){
+//     for(let j=i+1;j<a.length;j++){
+//         if(a[i]<a[j]){
+//             [a[i],a[j]]=[a[j],a[i]]
+//         }
+//     }
+// }
+// let small=a[a.length-1]
+// console.log(small)
 
 
 //Repeated Number Count...........................................................................................................
@@ -461,7 +501,7 @@
 // }
 // console.log(count)
 
-//palindrome.............................................................................
+//palindrome...................................................................................................................
 
 // let word="malayalam"
 // let result=""
@@ -470,3 +510,18 @@
 // }
 // console.log(result)
 // console.log((result==word) ? "Palidrome":"Not palidrome")
+
+
+//Reverse using while loop....................................................................................................
+
+
+// let arr=[1,2,3,4,5]
+// let start=0
+// let end=arr.length-1;
+// while(start<end){
+//     [arr[start],arr[end]]=[arr[end],arr[start]]
+//     start++;
+//     end--
+// }
+// console.log(arr)
+
