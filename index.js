@@ -538,3 +538,30 @@
 // }
 // a()
 
+//Swapping ..............................................................................................................................
+
+// const arr=[1,2,3,4,5,6,7,8,9,10]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//     if(arr[i]%2==1){
+//        [arr[i],arr[j]]=[arr[j],arr[i]] 
+//     }
+//     }
+// }
+// console.log(arr)
+
+
+// const a1=[1,2,3,4,5]
+// const a2=[6,7,8,9,10]
+// for(let i=0;i<a1.length;i++){
+//     if(a1[i]%2==0){
+//     for(let j=0;j<a2.length;j++){
+//         if(a2[j]%2==1){
+//             [a1[i],a2[j]]=[a2[j],a1[i]]
+//             break;
+//         }
+//     }
+//     }
+// }
+// console.log(a1)
+// console.log(a2)
